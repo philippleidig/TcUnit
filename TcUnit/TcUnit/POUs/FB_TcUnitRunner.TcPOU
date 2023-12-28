@@ -86,7 +86,9 @@ END_IF
 TestResults();
 
 // Log test suite results continuously
-TestResultLogger.LogTestSuiteResults();
+IF GVL_Param_TcUnit.EnableLogResults THEN
+    TestResultLogger.LogTestSuiteResults();
+END_IF
 
 // Publish the xUnit Xml file once if enabled
 XmlTestResultPublisher.LogTestSuiteResults();
@@ -160,7 +162,9 @@ END_IF
 TestResults();
 
 // Log test suite results continuously
-TestResultLogger.LogTestSuiteResults();
+IF GVL_Param_TcUnit.EnableLogResults THEN
+    TestResultLogger.LogTestSuiteResults();
+END_IF
 
 // Publish the xUnit Xml file once if enabled
 XmlTestResultPublisher.LogTestSuiteResults();

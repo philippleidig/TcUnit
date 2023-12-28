@@ -7,6 +7,9 @@ VAR_GLOBAL CONSTANT
     MaxNumberOfTestsForEachTestSuite : UINT := 100;
     MaxNumberOfAssertsForEachTestSuite : UINT := 1000;
 
+	(* Enable (TRUE) or disable (FALSE) logging of the test results *)
+    EnableLogResults : BOOL := TRUE;
+	
     (* TcUnit logs complete test results. These include:
          - Number of test suites
          - Number of tests
